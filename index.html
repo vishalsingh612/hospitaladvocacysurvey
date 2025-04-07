@@ -95,6 +95,7 @@
 </head>
 <body>
   <h1>Customer Advocacy & Hospital Brand Perception Survey</h1>
+  <p>This survey is designed to understand the key factors that influence your perception, satisfaction, and advocacy for hospital brands. Your feedback is completely anonymous and will help improve healthcare experiences for all.</p>
   <form method="POST" action="https://formspree.io/f/mgvapzdp">
     
     <!-- Demographics -->
@@ -110,7 +111,7 @@
       <input type="email" name="email" required>
     </label>
 
-    <label>Age*<br>
+    <label>What is your Age?*<br>
       <select name="age" required>
         <option value="">Select</option>
         <option>Under 18</option>
@@ -122,7 +123,7 @@
       </select>
     </label>
 
-    <label>Gender*<br>
+    <label>What is your gender?*<br>
       <select name="gender" required>
         <option value="">Select</option>
         <option>Male</option>
@@ -131,7 +132,7 @@
       </select>
     </label>
 
-    <label>Yearly Household Income*<br>
+    <label>What is your approximate yearly household income?*<br>
       <select name="income" required>
         <option value="">Select</option>
         <option>Below ₹1,50,000</option>
@@ -142,7 +143,7 @@
       </select>
     </label>
 
-    <label>Highest Level of Education*<br>
+    <label>What is the highest level of education you have completed?*<br>
       <select name="education" required>
         <option value="">Select</option>
         <option>School</option>
@@ -153,11 +154,11 @@
       </select>
     </label>
 
-    <label>Current Occupation*<br>
+    <label>What is your current occupation*<br>
       <input type="text" name="occupation" required>
     </label>
 
-    <label>Current City*<br>
+    <label>What is your Current City*<br>
       <input type="text" name="city" required>
     </label>
 
@@ -183,24 +184,266 @@
           <input type="radio" id="ri5" name="reputation" value="5"><label for="ri5">5</label>
         </div>
       </div><br>
+      <!-- Community Involvement -->
+<div>Community Involvement:
+  <div class="rating-options">
+    <input type="radio" id="ci1" name="community" value="1" required><label for="ci1">1</label>
+    <input type="radio" id="ci2" name="community" value="2"><label for="ci2">2</label>
+    <input type="radio" id="ci3" name="community" value="3"><label for="ci3">3</label>
+    <input type="radio" id="ci4" name="community" value="4"><label for="ci4">4</label>
+    <input type="radio" id="ci5" name="community" value="5"><label for="ci5">5</label>
+  </div>
+</div><br>
 
-      <!-- Add similar blocks for other 1–5 rating inputs -->
+<!-- Environmental Responsibility -->
+<div>Environmental Responsibility:
+  <div class="rating-options">
+    <input type="radio" id="er1" name="environment" value="1" required><label for="er1">1</label>
+    <input type="radio" id="er2" name="environment" value="2"><label for="er2">2</label>
+    <input type="radio" id="er3" name="environment" value="3"><label for="er3">3</label>
+    <input type="radio" id="er4" name="environment" value="4"><label for="er4">4</label>
+    <input type="radio" id="er5" name="environment" value="5"><label for="er5">5</label>
+  </div>
+</div><br>
+
+<!-- Alignment with Personal Values -->
+<div>Alignment with Personal Values:
+  <div class="rating-options">
+    <input type="radio" id="pv1" name="values" value="1" required><label for="pv1">1</label>
+    <input type="radio" id="pv2" name="values" value="2"><label for="pv2">2</label>
+    <input type="radio" id="pv3" name="values" value="3"><label for="pv3">3</label>
+    <input type="radio" id="pv4" name="values" value="4"><label for="pv4">4</label>
+    <input type="radio" id="pv5" name="values" value="5"><label for="pv5">5</label>
+  </div>
+</div><br>
+     
 
     </fieldset>
+<!-- Statement Agreement -->
+<div>To what extent do you agree with the following statement?<br>
+<i>"I prefer hospital brands that reflect my personal beliefs and values."</i><br>
+(1 = Strongly Disagree, 5 = Strongly Agree) *
+  <div class="rating-options">
+    <input type="radio" id="agree1" name="belief_agree" value="1" required><label for="agree1">1</label>
+    <input type="radio" id="agree2" name="belief_agree" value="2"><label for="agree2">2</label>
+    <input type="radio" id="agree3" name="belief_agree" value="3"><label for="agree3">3</label>
+    <input type="radio" id="agree4" name="belief_agree" value="4"><label for="agree4">4</label>
+    <input type="radio" id="agree5" name="belief_agree" value="5"><label for="agree5">5</label>
+  </div>
+</div><br>
 
-    <!-- Preferred Info Channels -->
-    <label>Preferred Channels (Select all that apply):<br>
-      <div class="checkbox-group">
-        <label><input type="checkbox" name="info_channels" value="Email"> Email</label>
-        <label><input type="checkbox" name="info_channels" value="SMS/Text"> SMS</label>
-        <label><input type="checkbox" name="info_channels" value="Social Media"> Social Media</label>
-        <label><input type="checkbox" name="info_channels" value="Television"> Television</label>
-        <label><input type="checkbox" name="info_channels" value="Printed Materials"> Printed Materials</label>
-        <label><input type="checkbox" name="info_channels" value="In-person Meetings"> In-person Meetings</label>
-      </div>
-    </label>
+<!-- Visit Frequency -->
+<div>How often do you visit a hospital for non-emergency care? *
+  <select name="visit_frequency" required>
+    <option value="">--Select--</option>
+    <option value="Never">Never</option>
+    <option value="Rarely">Rarely (less than once a year)</option>
+    <option value="Occasionally">Occasionally (1–2 times a year)</option>
+    <option value="Regularly">Regularly (3–4 times a year)</option>
+    <option value="Frequently">Frequently (more than 4 times a year)</option>
+  </select>
+</div><br>
 
-    <!-- Add remaining multiple-choice (1–5) sections similarly as above -->
+<!-- Likelihood of Future Use -->
+<div>How likely are you to continue using your current hospital in the future? (1 = Not Likely, 5 = Very Likely) *
+  <div class="rating-options">
+    <input type="radio" id="future1" name="future_use" value="1" required><label for="future1">1</label>
+    <input type="radio" id="future2" name="future_use" value="2"><label for="future2">2</label>
+    <input type="radio" id="future3" name="future_use" value="3"><label for="future3">3</label>
+    <input type="radio" id="future4" name="future_use" value="4"><label for="future4">4</label>
+    <input type="radio" id="future5" name="future_use" value="5"><label for="future5">5</label>
+  </div>
+</div><br>
+
+<!-- Loyalty -->
+<div>I always choose the same hospital when I need non-emergency care. (1 = Strongly Disagree, 5 = Strongly Agree) *
+  <div class="rating-options">
+    <input type="radio" id="loyal1" name="loyalty" value="1" required><label for="loyal1">1</label>
+    <input type="radio" id="loyal2" name="loyalty" value="2"><label for="loyal2">2</label>
+    <input type="radio" id="loyal3" name="loyalty" value="3"><label for="loyal3">3</label>
+    <input type="radio" id="loyal4" name="loyalty" value="4"><label for="loyal4">4</label>
+    <input type="radio" id="loyal5" name="loyalty" value="5"><label for="loyal5">5</label>
+  </div>
+</div><br>
+
+<!-- Familiarity -->
+<div>How familiar are you with your preferred hospital brand? *
+  <select name="familiarity" required>
+    <option value="">--Select--</option>
+    <option value="Not at all">Not at all familiar</option>
+    <option value="Slightly">Slightly familiar</option>
+    <option value="Moderately">Moderately familiar</option>
+    <option value="Very">Very familiar</option>
+  </select>
+</div><br>
+
+<!-- Hospital Name -->
+<div>Can you name the hospital you usually visit? *<br>
+  <input type="text" name="hospital_name" required>
+</div><br>
+
+<!-- Satisfaction -->
+<div>How satisfied are you with the overall services provided by your current hospital? (1 = Very dissatisfied, 5 = Very satisfied) *
+  <div class="rating-options">
+    <input type="radio" id="satisfy1" name="satisfaction" value="1" required><label for="satisfy1">1</label>
+    <input type="radio" id="satisfy2" name="satisfaction" value="2"><label for="satisfy2">2</label>
+    <input type="radio" id="satisfy3" name="satisfaction" value="3"><label for="satisfy3">3</label>
+    <input type="radio" id="satisfy4" name="satisfaction" value="4"><label for="satisfy4">4</label>
+    <input type="radio" id="satisfy5" name="satisfaction" value="5"><label for="satisfy5">5</label>
+  </div>
+</div><br>
+
+<!-- Staff Behavior -->
+<div>How would you rate the behavior and professionalism of the hospital staff? *
+  <div class="rating-options">
+    <input type="radio" id="staff1" name="staff" value="1" required><label for="staff1">1</label>
+    <input type="radio" id="staff2" name="staff" value="2"><label for="staff2">2</label>
+    <input type="radio" id="staff3" name="staff" value="3"><label for="staff3">3</label>
+    <input type="radio" id="staff4" name="staff" value="4"><label for="staff4">4</label>
+    <input type="radio" id="staff5" name="staff" value="5"><label for="staff5">5</label>
+  </div>
+</div><br>
+
+<!-- Cleanliness -->
+<div>How would you rate the cleanliness and comfort of your hospital's facilities? *
+  <div class="rating-options">
+    <input type="radio" id="clean1" name="cleanliness" value="1" required><label for="clean1">1</label>
+    <input type="radio" id="clean2" name="cleanliness" value="2"><label for="clean2">2</label>
+    <input type="radio" id="clean3" name="cleanliness" value="3"><label for="clean3">3</label>
+    <input type="radio" id="clean4" name="cleanliness" value="4"><label for="clean4">4</label>
+    <input type="radio" id="clean5" name="cleanliness" value="5"><label for="clean5">5</label>
+  </div>
+</div><br>
+
+<!-- Timeliness -->
+<div>Were your appointments and procedures completed on time? *
+  <select name="timeliness" required>
+    <option value="">--Select--</option>
+    <option value="Always">Always</option>
+    <option value="Often">Often</option>
+    <option value="Sometimes">Sometimes</option>
+    <option value="Rarely">Rarely</option>
+    <option value="Never">Never</option>
+  </select>
+</div><br>
+
+<!-- Recommendation -->
+<div>How likely are you to recommend your current hospital to family or friends? (1 = Not likely at all, 5 = Extremely likely) *
+  <div class="rating-options">
+    <input type="radio" id="recommend1" name="recommend" value="1" required><label for="recommend1">1</label>
+    <input type="radio" id="recommend2" name="recommend" value="2"><label for="recommend2">2</label>
+    <input type="radio" id="recommend3" name="recommend" value="3"><label for="recommend3">3</label>
+    <input type="radio" id="recommend4" name="recommend" value="4"><label for="recommend4">4</label>
+    <input type="radio" id="recommend5" name="recommend" value="5"><label for="recommend5">5</label>
+  </div>
+</div><br>
+
+<!-- Advocacy -->
+<div>I often speak positively about my hospital experience with friends and family. (1 = Strongly Disagree, 5 = Strongly Agree) *
+  <div class="rating-options">
+    <input type="radio" id="advocate1" name="advocacy" value="1" required><label for="advocate1">1</label>
+    <input type="radio" id="advocate2" name="advocacy" value="2"><label for="advocate2">2</label>
+    <input type="radio" id="advocate3" name="advocacy" value="3"><label for="advocate3">3</label>
+    <input type="radio" id="advocate4" name="advocacy" value="4"><label for="advocate4">4</label>
+    <input type="radio" id="advocate5" name="advocacy" value="5"><label for="advocate5">5</label>
+  </div>
+</div><br>
+
+<!-- Social Media -->
+<div>Have you ever shared your hospital experience on social media or online reviews? *
+  <input type="radio" id="shared_yes" name="social_share" value="Yes" required><label for="shared_yes">Yes</label>
+  <input type="radio" id="shared_no" name="social_share" value="No"><label for="shared_no">No</label>
+</div><br>
+
+<!-- Pricing -->
+<div>How do you perceive the pricing of services at your current hospital? *
+  <select name="pricing" required>
+    <option value="">--Select--</option>
+    <option value="Very expensive">Very expensive</option>
+    <option value="Somewhat expensive">Somewhat expensive</option>
+    <option value="Reasonably priced">Reasonably priced</option>
+    <option value="Affordable">Affordable</option>
+  </select>
+</div><br>
+
+<!-- Discounts Importance -->
+<div>How important are discounts or value-based pricing in your decision to select a hospital? (1 = Not important, 5 = Very important) *
+  <div class="rating-options">
+    <input type="radio" id="discount1" name="discount_importance" value="1" required><label for="discount1">1</label>
+    <input type="radio" id="discount2" name="discount_importance" value="2"><label for="discount2">2</label>
+    <input type="radio" id="discount3" name="discount_importance" value="3"><label for="discount3">3</label>
+    <input type="radio" id="discount4" name="discount_importance" value="4"><label for="discount4">4</label>
+    <input type="radio" id="discount5" name="discount_importance" value="5"><label for="discount5">5</label>
+  </div>
+</div><br>
+
+<!-- Quality & Tech Rating -->
+<div>Compared to other hospitals in your area, how would you rate your preferred hospital brand on service quality and technological innovation? (1 = Much lower, 5 = Much higher) *
+  <div class="rating-options">
+    <input type="radio" id="quality1" name="quality_tech" value="1" required><label for="quality1">1</label>
+    <input type="radio" id="quality2" name="quality_tech" value="2"><label for="quality2">2</label>
+    <input type="radio" id="quality3" name="quality_tech" value="3"><label for="quality3">3</label>
+    <input type="radio" id="quality4" name="quality_tech" value="4"><label for="quality4">4</label>
+    <input type="radio" id="quality5" name="quality_tech" value="5"><label for="quality5">5</label>
+  </div>
+</div><br>
+
+<!-- Communication Channels -->
+<div>Which channels do you prefer for receiving healthcare-related information? (Select all that apply) *
+  <br>
+  <input type="checkbox" name="channels" value="Email"> Email<br>
+  <input type="checkbox" name="channels" value="SMS/Text"> SMS/Text<br>
+  <input type="checkbox" name="channels" value="Social Media"> Social Media<br>
+  <input type="checkbox" name="channels" value="Television"> Television<br>
+  <input type="checkbox" name="channels" value="Printed Materials"> Printed Materials<br>
+  <input type="checkbox" name="channels" value="In-person Meetings"> In-person Meetings<br>
+</div><br>
+
+<!-- Communication Usefulness -->
+<div>Hospital communications (SMS, emails, ads, etc.) help me make better health decisions. (1 = Strongly Disagree, 5 = Strongly Agree) *
+  <div class="rating-options">
+    <input type="radio" id="comm1" name="communication_helpful" value="1" required><label for="comm1">1</label>
+    <input type="radio" id="comm2" name="communication_helpful" value="2"><label for="comm2">2</label>
+    <input type="radio" id="comm3" name="communication_helpful" value="3"><label for="comm3">3</label>
+    <input type="radio" id="comm4" name="communication_helpful" value="4"><label for="comm4">4</label>
+    <input type="radio" id="comm5" name="communication_helpful" value="5"><label for="comm5">5</label>
+  </div>
+</div><br>
+
+<!-- Overall Service -->
+<div>How would you rate the overall quality of service at your hospital? (1 = Very poor, 5 = Excellent) *
+  <div class="rating-options">
+    <input type="radio" id="overall1" name="overall_quality" value="1" required><label for="overall1">1</label>
+    <input type="radio" id="overall2" name="overall_quality" value="2"><label for="overall2">2</label>
+    <input type="radio" id="overall3" name="overall_quality" value="3"><label for="overall3">3</label>
+    <input type="radio" id="overall4" name="overall_quality" value="4"><label for="overall4">4</label>
+    <input type="radio" id="overall5" name="overall_quality" value="5"><label for="overall5">5</label>
+  </div>
+</div><br>
+
+<!-- Return Likelihood -->
+<div>How likely are you to return to the same hospital for future healthcare needs? (1 = Not likely at all, 5 = Very likely) *
+  <div class="rating-options">
+    <input type="radio" id="return1" name="return_likelihood" value="1" required><label for="return1">1</label>
+    <input type="radio" id="return2" name="return_likelihood" value="2"><label for="return2">2</label>
+    <input type="radio" id="return3" name="return_likelihood" value="3"><label for="return3">3</label>
+    <input type="radio" id="return4" name="return_likelihood" value="4"><label for="return4">4</label>
+    <input type="radio" id="return5" name="return_likelihood" value="5"><label for="return5">5</label>
+  </div>
+</div><br>
+
+<!-- Influencing Factors -->
+<div>To what extent do factors like recommendations from others and the urgency of care needs influence your decision to choose a hospital? (1 = Not influential, 5 = Extremely influential) *
+  <div class="rating-options">
+    <input type="radio" id="influence1" name="influence_factors" value="1" required><label for="influence1">1</label>
+    <input type="radio" id="influence2" name="influence_factors" value="2"><label for="influence2">2</label>
+    <input type="radio" id="influence3" name="influence_factors" value="3"><label for="influence3">3</label>
+    <input type="radio" id="influence4" name="influence_factors" value="4"><label for="influence4">4</label>
+    <input type="radio" id="influence5" name="influence_factors" value="5"><label for="influence5">5</label>
+  </div>
+</div><br>
+
+   
 
     <button type="submit">Submit Survey</button>
   </form>
